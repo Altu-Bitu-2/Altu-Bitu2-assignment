@@ -5,8 +5,7 @@ t=int(input()) #테스트 케이스 개수
 
 for _ in range(t):
     n=int(input())
-    note_one=list(map(int, input().split())) #수첩 1
-    note_one=set(note_one)
+    note_one=set(map(int, input().split())) #수첩 1
     
     m=int(input())
     note_two=list(map(int, input().split())) #수첩 2

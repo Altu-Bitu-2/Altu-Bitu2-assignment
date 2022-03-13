@@ -17,7 +17,7 @@ for i in range(t):
     for i in range(n):
         costume, cst_type = input().split()
         if cst_type in fashion:
-            fashion.update({cst_type:fashion[cst_type]+1})
+            fashion[cst_type]+=1
         else:
             fashion[cst_type] = 1
             

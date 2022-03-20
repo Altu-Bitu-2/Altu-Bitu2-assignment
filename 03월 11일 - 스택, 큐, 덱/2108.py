@@ -1,6 +1,6 @@
 import sys
-import collections
 import math
+import collections
 input = sys.stdin.readline
 
 
@@ -12,7 +12,7 @@ for i in num_list:
 
 num_list.sort(reverse=True)
 print(math.floor((sum(num_list)/n)+0.5)) #산술평균
-print(num_list[math.floor(n/2+1)-1]) #중앙값
+print(num_list[n//2]) #중앙값
 
 #최빈값
 num_set=sorted(num_count.keys(),key=lambda x:(-num_count[x],x)) 

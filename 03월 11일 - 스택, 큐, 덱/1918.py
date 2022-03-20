@@ -6,7 +6,7 @@ prior={'(':5,')':0,'+':3,'-':3,'*':1,'/':1} #스택에서 연산자 우선순위
 def is_empty(stack):
     return len(stack)==0
 def is_operator(char): 
-    return char=='+' or char=='*' or char=='-' or char=='/' or char=='(' or char==')'
+    return char in '+*-/()'
 
 postfix='' #표현식
 operator=[]

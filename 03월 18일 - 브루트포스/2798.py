@@ -10,6 +10,8 @@ max=0
 for c in card_comb:
     card_sum=sum(c)
     #m을 넘지 않는 최댓값인지 확인
-    if card_sum<=m and card_sum>max:
+    if card_sum>m:
+        continue
+    elif card_sum>max:
         max=card_sum
 print(max)

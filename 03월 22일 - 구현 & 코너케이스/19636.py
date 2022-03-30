@@ -1,5 +1,4 @@
 import sys
-import math
 input=sys.stdin.readline
 #요요 판단 함수
 def is_yoyo(l_0,l,a): #변화한 일일 기초 대사량, 다이어트 전 일일 섭취량, 다이어트 전 활동 대사량
@@ -17,7 +16,7 @@ def diet_meta(w_0,d,l_0,l,a,t):
         lamd=l-(meta+a) #체중의 변화
         w+=lamd
         if abs(lamd)>t:
-            meta+=math.floor(lamd/2)
+            meta+=lamd//2
         if is_death(w,meta):
             return ['Danger Diet']
     #요요 판단

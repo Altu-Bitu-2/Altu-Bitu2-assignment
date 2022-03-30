@@ -5,7 +5,7 @@ s=set()
 
 m=int(input())
 for _ in range(m):
-    cmd=list(input().split())
+    cmd=input().split()
 
     if cmd[0]=='add':
         s.add(cmd[1])

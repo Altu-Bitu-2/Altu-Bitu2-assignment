@@ -2,24 +2,18 @@ import sys
 input=sys.stdin.readline
 
 n,k=map(int,input().split())
+cnt=k
 num=input().rstrip()
 stack=[]
 #가장 큰 수 n-k개 선택 
-for i in range(n):
+for i in num:
     #k가 0이 되면 stop
-    if k==0 or not stack:
-        stack.append(num[i])
+    if cnt==0 or not stack:
+        stack.append(i)
         continue
-    while stack and k>0:
-        if int(stack[-1])<int(num[i]):
-            stack.pop()
-            k-=1
-        else: break
-        
-    stack.append(num[i])
+    while stack and cnt>0 and int(stack[-1])<int(i):
+        stack.pop()
+        cnt-=1
+    stack.append(i)
 
-while k>0:
-    stack.pop()
-    k-=1
-
-print(''.join(stack))
+print(''.join(stack[:n-k]))

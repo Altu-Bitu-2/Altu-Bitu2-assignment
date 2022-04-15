@@ -5,7 +5,6 @@ input=sys.stdin.readline
 
 #타자 순서를 주면 n이닝 후 점수를 리턴하는 함수
 def play_innings(turns):
-    global innings
     home_base=0
     turn=0
 
@@ -13,8 +12,7 @@ def play_innings(turns):
         first_base,second_base,third_base=0,0,0
         out=0
         
-        while True:
-            if out==3: break #다음 이닝으로
+        while out!=3:
             if i[turns[turn]]==0: out+=1
             #1루타
             elif i[turns[turn]]==1:

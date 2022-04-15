@@ -1,4 +1,4 @@
-#BOJ19637 - IF문 좀 대신 써
+#BOJ19637 - IF문 좀 대신 써줘
 import sys
 from bisect import *
 input=sys.stdin.readline
@@ -15,5 +15,4 @@ for _ in range(n):
     
 for _ in range(m):
     #target이 name_list의 어느 idx에 해당하는지 확인
-    target=int(input())
-    print(name_list[bisect_left(power_list,target)])
+    print(name_list[bisect_left(power_list,int(input()))])

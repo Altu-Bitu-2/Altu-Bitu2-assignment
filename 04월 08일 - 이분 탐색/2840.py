@@ -1,6 +1,5 @@
 #BOJ2840 - 행운의 바퀴
 import sys
-from collections import *
 input=sys.stdin.readline
 
 def main():

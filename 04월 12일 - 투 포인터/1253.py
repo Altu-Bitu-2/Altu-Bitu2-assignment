@@ -2,7 +2,7 @@
 import sys
 input=sys.stdin.readline
 
-#좋은 
+#좋은 수가 있는지 판단하는 함수
 def find_good(idx,arr):
     left,right=0,len(arr)-1
     
